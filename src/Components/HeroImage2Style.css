@@ -1,0 +1,48 @@
+.hero-img{
+    width: 100%;
+    background-color: rgba(0, 0, 0, a0.5);
+    height: 60vh;
+    position: relative;
+}
+
+.heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-img::before{
+    content: " ";
+    background: url("https://media.istockphoto.com/id/1394062991/photo/blockchain-abstract-nft-futuristic-technology-neon-pixel-grid-colorful-background-square-cube.jpg?b=1&s=170667a&w=0&k=20&c=MZZNDFYe_2JjruuRe2amulQgwefDpNE5ff0nsRILL9Q=");
+    background-size: cover;
+    background-position: center-top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 40%;
+}
+
+.hero-img h1{
+    font-size: 2.4rem;
+}
+.hero-img p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px){
+    .hero-img h1{
+        font-size: 2rem;
+    }
+    .hero-img p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+}
